@@ -1,4 +1,4 @@
-package base.collection;
+package base.object;
 
 import com.google.common.collect.Maps;
 
@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
+ * Equals和HashCode方法重写示例
  * @author ts495
  * @date 2020/12/5
  */

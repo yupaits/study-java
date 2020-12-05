@@ -1,6 +1,9 @@
+package algorithm.sort;
+
 import java.util.Arrays;
 
 /**
+ * 插入排序
  * @author ts495
  * @date 2020/9/16
  */

@@ -1,8 +1,11 @@
+package base.object;
+
 /**
+ * 继承示例
  * @author ts495
  * @date 2020/9/16
  */
-public class ExtendsTest {
+public class ExtendsSample {
     static class People {
         String name;
 
