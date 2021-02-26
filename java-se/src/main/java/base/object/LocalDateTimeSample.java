@@ -9,6 +9,8 @@ import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
+import static java.time.temporal.ChronoUnit.MINUTES;
+
 /**
  * Java8日期时间示例
  * @author 01401957
@@ -52,6 +54,8 @@ public class LocalDateTimeSample {
         System.out.printf("%s to LocalDate: %s%n", format(now), format(now.toLocalDate()));
         System.out.printf("%s to LocalTime: %s%n", format(now), format(now.toLocalTime()));
         System.out.printf("%s at start of day: %s%n", format(today), format(today.atStartOfDay()));
+
+        System.out.printf("duration of [%s, %s]: %d minutes%n", format(now), format(now.minusDays(2L)), MINUTES.between(now, now.minusDays(2L)));
     }
 
     public static String format(LocalDate localDate) {
